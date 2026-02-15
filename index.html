@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sherry Sun</title>
+  <meta name="description" content="Sherry Sun links" />
+  <meta name="theme-color" content="#f6f3ee" />
+
+  <style>
+    :root {
+      --bg: #f6f3ee;           /* warm neutral */
+      --fg: #0f172a;           /* slate-900-ish */
+      --muted: #64748b;        /* slate-500-ish */
+      --border: #e2e8f0;       /* slate-200-ish */
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: var(--bg);
+      color: var(--fg);
+      display: grid;
+      place-items: center;
+      padding: 28px 16px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .top {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    .sub {
+      margin: 6px 0 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    a.btn {
+      text-decoration: none;
+      color: var(--fg);
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 14px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+    }
+
+    a.btn:hover {
+      transform: translateY(-1px);
+      border-color: #cbd5e1;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.05);
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      color: var(--muted);
+      flex: 0 0 auto;
+    }
+
+    .label {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .label strong {
+      font-size: 0.98rem;
+      font-weight: 650;
+      line-height: 1.2;
+    }
+
+    .label span {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      a.btn { transition: none; }
+      a.btn:hover { transform: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card" role="region" aria-label="Sherry Sun links">
+      <div class="top">
+        <h1 class="name">Hi, I’m Sherry</h1>
+        <p class="sub">Taipei · SF</p>
+      </div>
+
+      <div class="links">
+        <!-- Instagram -->
+        <a class="btn" href="https://www.instagram.com/sherryberry/" target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 2.75h9A4.75 4.75 0 0 1 21.25 7.5v9A4.75 4.75 0 0 1 16.5 21.25h-9A4.75 4.75 0 0 1 2.75 16.5v-9A4.75 4.75 0 0 1 7.5 2.75Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 16.1a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M17.2 6.9h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="label">
+            <strong>Instagram</strong>
+            <span>@sherryberry</span>
+          </span>
+        </a>
+
+        <!-- Facebook -->
+        <a class="btn" href="https://www.facebook.com/sherry.sun.226387" target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 21v-8h2.7l.4-3H13.5V8.1c0-.9.3-1.6 1.7-1.6H16.8V3.8c-.3 0-1.4-.1-2.7-.1-2.7 0-4.6 1.6-4.6 4.6V10H7v3h2.5v8h4Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="label">
+            <strong>Facebook</strong>
+            <span>facebook.com/sherry.sun.226387</span>
+          </span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="btn" href="https://www.linkedin.com/in/sherryboberry/" target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 9.5H3.75V20.25H6.5V9.5Z" fill="currentColor"/>
+              <path d="M5.12 8.1a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2Z" fill="currentColor"/>
+              <path d="M10.25 9.5h2.64v1.47h.04c.37-.7 1.28-1.44 2.64-1.44 2.82 0 3.34 1.86 3.34 4.28v6.44h-2.75v-5.72c0-1.36-.03-3.1-1.89-3.1-1.89 0-2.18 1.48-2.18 3v5.82h-2.88V9.5Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="label">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/sherryboberry</span>
+          </span>
+        </a>
+      </div>
+
+      <footer>
+        © <span id="year"></span> Sherry Sun
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
